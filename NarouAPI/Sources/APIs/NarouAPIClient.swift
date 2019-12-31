@@ -12,7 +12,7 @@ import Foundation
 public struct NarouAPIClient {
 
     public enum Failure: Error {
-        case error
+        case error(String)
     }
 
     private static let successRange = 200 ..< 300
@@ -50,7 +50,7 @@ public struct NarouAPIClient {
             case .success(let value):
                 completion(.success(value))
             case .failure(let error):
-                completion(.failure(Failure.error))
+                completion(.failure(Failure.error(error.localizedDescription)))
             }
         }
     }
