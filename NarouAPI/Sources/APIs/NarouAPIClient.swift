@@ -10,6 +10,11 @@ import Alamofire
 import Foundation
 
 public struct NarouAPIClient {
+
+    public enum Failure: Error {
+        case error
+    }
+
     private static let successRange = 200 ..< 300
     private static let contentType = ["application/json"]
     private static let retryCount: Int = 1
@@ -35,6 +40,18 @@ public struct NarouAPIClient {
     public static func request<T: BaseRequestProtocol, V: Codable>(_ request: T, completion: @escaping (Result<V, AFError>) -> Void) where T.ResponseType == V {
         self.request(request).responseDecodable(of: V.self, queue: queue, decoder: decoder) { response in
             completion(response.result)
+        }
+    }
+
+    public static func request(options: [RequestOption], filterOptions: [FilterOption], completion: @escaping (Result<NovelResponse, Failure>) -> Void) {
+        let request = NovelRequest(options: options, filterOptions: filterOptions)
+        self.request(request).responseDecodable(of: NovelResponse.self, queue: queue, decoder: decoder) { response in
+            switch response.result {
+            case .success(let value):
+                completion(.success(value))
+            case .failure(let error):
+                completion(.failure(Failure.error))
+            }
         }
     }
 }
