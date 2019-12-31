@@ -2,7 +2,7 @@
 //  NarouAPITests.swift
 //  NarouAPITests
 //
-//  Created by 坂上 翔悟 on 2019/12/31.
+//  Created by tosaka on 2019/12/31.
 //  Copyright © 2019 tosaka.net. All rights reserved.
 //
 

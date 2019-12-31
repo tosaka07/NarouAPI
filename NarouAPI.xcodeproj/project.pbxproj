@@ -3,111 +3,233 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A165BC6823BB707300196942 /* NarouAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A165BC5E23BB707300196942 /* NarouAPI.framework */; };
-		A165BC6D23BB707300196942 /* NarouAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165BC6C23BB707300196942 /* NarouAPITests.swift */; };
-		A165BC6F23BB707300196942 /* NarouAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A165BC6123BB707300196942 /* NarouAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06F8F139DDF72284B420FB59 /* EndType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89FECFDF25FF8002004F30 /* EndType.swift */; };
+		0B857322497612CDAD6348AE /* NovelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA50DEEE93FF3F1307FB12F /* NovelType.swift */; };
+		0E4F1E7ED92331477C64B98A /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */; };
+		18589FC8B8596C45C4BCDE68 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBE3F442B716A22B6DF4A3 /* Genre.swift */; };
+		269C6244BD32D59FC98C2AEA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14E776914247850C4965C2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4221AA260F63B0F16A5FA12D /* Novel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */; };
+		54192F6191CFB81706ADE4C0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14E776914247850C4965C2 /* RxSwift.framework */; };
+		5A3D4A6AB3B3A6813EA285A4 /* BigGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0322235A45B939715745 /* BigGenre.swift */; };
+		601966E98C4844B8F90814E0 /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9763210B3E804267C90B14 /* ParameterBuilder.swift */; };
+		71D4CD1FA52F452261C37A2F /* NarouAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6470E5802BFAB0C2B214040 /* NarouAPITests.swift */; };
+		81DC662519F698E6B7DF0196 /* NarouAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FD93F59E345D771305534A /* NarouAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6C3F01EF3558F637CE77E6 /* NovelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E698ED90E16FE824D2D85 /* NovelResponse.swift */; };
+		9A9C5C390A855D34942BEEEE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A59CE752E2AF48656C0CA87B /* HowToPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5088877BB87850EA279F367 /* HowToPost.swift */; };
+		A5E63A8EBD4F8D5FDC1A1103 /* NarouAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B318707DED5F705316CDBACC /* NarouAPI.framework */; };
+		A7C6991BDCFA0BD82109A803 /* NarouAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */; };
+		B09174723B104A9BD8B583D8 /* NarouAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B318707DED5F705316CDBACC /* NarouAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5583DEE0E4931352335ED17 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */; };
+		E76D4512F30BA6860D86A956 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2B687F67C2028F5F96A8E /* APIOptions.swift */; };
+		EEEDCDEA42307239A2C07C9E /* URLParameterBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3079E9962F0F2D9B96D0D /* URLParameterBuildable.swift */; };
+		F68EFF18C63CD92B9C754105 /* NovelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454F45804BEF3780DE8DC9 /* NovelRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A165BC6923BB707300196942 /* PBXContainerItemProxy */ = {
+		C985DA36C2DF63710FF4DF51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A165BC5523BB707300196942 /* Project object */;
+			containerPortal = C1A3580AD72FB57F2BA4534C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A165BC5D23BB707300196942;
+			remoteGlobalIDString = 4EFD43ABE3E2EE010B3DFC91;
 			remoteInfo = NarouAPI;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		67650666F6EB584A76BD50C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B09174723B104A9BD8B583D8 /* NarouAPI.framework in Embed Frameworks */,
+				9A9C5C390A855D34942BEEEE /* Alamofire.framework in Embed Frameworks */,
+				269C6244BD32D59FC98C2AEA /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A165BC5E23BB707300196942 /* NarouAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NarouAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A165BC6123BB707300196942 /* NarouAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NarouAPI.h; sourceTree = "<group>"; };
-		A165BC6223BB707300196942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A165BC6723BB707300196942 /* NarouAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NarouAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A165BC6C23BB707300196942 /* NarouAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPITests.swift; sourceTree = "<group>"; };
-		A165BC6E23BB707300196942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E14E776914247850C4965C2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPIClient.swift; sourceTree = "<group>"; };
+		23F8D08C41DAC304FF293405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		3F9763210B3E804267C90B14 /* ParameterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilder.swift; sourceTree = "<group>"; };
+		46C3079E9962F0F2D9B96D0D /* URLParameterBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterBuildable.swift; sourceTree = "<group>"; };
+		5004C351700AB9CE5D20CB9F /* NarouAPITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NarouAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
+		7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Novel.swift; sourceTree = "<group>"; };
+		88FD93F59E345D771305534A /* NarouAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NarouAPI.h; sourceTree = "<group>"; };
+		8ADBE3F442B716A22B6DF4A3 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		9AC2B687F67C2028F5F96A8E /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
+		9D89FECFDF25FF8002004F30 /* EndType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndType.swift; sourceTree = "<group>"; };
+		9FA50DEEE93FF3F1307FB12F /* NovelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelType.swift; sourceTree = "<group>"; };
+		B318707DED5F705316CDBACC /* NarouAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NarouAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5088877BB87850EA279F367 /* HowToPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPost.swift; sourceTree = "<group>"; };
+		B9454F45804BEF3780DE8DC9 /* NovelRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelRequest.swift; sourceTree = "<group>"; };
+		BE6E698ED90E16FE824D2D85 /* NovelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelResponse.swift; sourceTree = "<group>"; };
+		E4EE66FC76251C9C63B95288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6470E5802BFAB0C2B214040 /* NarouAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPITests.swift; sourceTree = "<group>"; };
+		E8EC0322235A45B939715745 /* BigGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigGenre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A165BC5B23BB707300196942 /* Frameworks */ = {
+		4C6BEC92F92C61F9E7D08553 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5583DEE0E4931352335ED17 /* Alamofire.framework in Frameworks */,
+				54192F6191CFB81706ADE4C0 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A165BC6423BB707300196942 /* Frameworks */ = {
+		CF1BBE194ABB404B39A00216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A165BC6823BB707300196942 /* NarouAPI.framework in Frameworks */,
+				A5E63A8EBD4F8D5FDC1A1103 /* NarouAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A165BC5423BB707300196942 = {
+		18C5C6E6783438215D2CB6C0 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				A165BC6023BB707300196942 /* NarouAPI */,
-				A165BC6B23BB707300196942 /* NarouAPITests */,
-				A165BC5F23BB707300196942 /* Products */,
+				9AC2B687F67C2028F5F96A8E /* APIOptions.swift */,
+				B9454F45804BEF3780DE8DC9 /* NovelRequest.swift */,
+				3F9763210B3E804267C90B14 /* ParameterBuilder.swift */,
+				46C3079E9962F0F2D9B96D0D /* URLParameterBuildable.swift */,
 			);
+			path = Request;
 			sourceTree = "<group>";
 		};
-		A165BC5F23BB707300196942 /* Products */ = {
+		2BD4D45804B7917BE765B522 /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
-				A165BC5E23BB707300196942 /* NarouAPI.framework */,
-				A165BC6723BB707300196942 /* NarouAPITests.xctest */,
+				5C97D9EEF89811025CD79391 /* iOS */,
+			);
+			name = Carthage;
+			path = Carthage/Build;
+			sourceTree = "<group>";
+		};
+		5C97D9EEF89811025CD79391 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */,
+				0E14E776914247850C4965C2 /* RxSwift.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5EB12D35B78F4E14B8E812F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B318707DED5F705316CDBACC /* NarouAPI.framework */,
+				5004C351700AB9CE5D20CB9F /* NarouAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A165BC6023BB707300196942 /* NarouAPI */ = {
+		61FF55A437E2FDD912137579 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A165BC6123BB707300196942 /* NarouAPI.h */,
-				A165BC6223BB707300196942 /* Info.plist */,
+				E95F9DD0B41974CBE07465B7 /* APIs */,
+				85FC8D2A005C3D62DBF831F2 /* Models */,
 			);
-			path = NarouAPI;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		A165BC6B23BB707300196942 /* NarouAPITests */ = {
+		6279EFFB63CA108A6359062D = {
 			isa = PBXGroup;
 			children = (
-				A165BC6C23BB707300196942 /* NarouAPITests.swift */,
-				A165BC6E23BB707300196942 /* Info.plist */,
+				F62B9F84658EBB0849EFF056 /* NarouAPI */,
+				6683471ED49C6E46C259BFE3 /* NarouAPITests */,
+				E165C8329549AA64A3F1A015 /* Frameworks */,
+				5EB12D35B78F4E14B8E812F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6683471ED49C6E46C259BFE3 /* NarouAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4EE66FC76251C9C63B95288 /* Info.plist */,
+				E6470E5802BFAB0C2B214040 /* NarouAPITests.swift */,
 			);
 			path = NarouAPITests;
+			sourceTree = "<group>";
+		};
+		85FC8D2A005C3D62DBF831F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8EC0322235A45B939715745 /* BigGenre.swift */,
+				9D89FECFDF25FF8002004F30 /* EndType.swift */,
+				8ADBE3F442B716A22B6DF4A3 /* Genre.swift */,
+				B5088877BB87850EA279F367 /* HowToPost.swift */,
+				7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */,
+				BE6E698ED90E16FE824D2D85 /* NovelResponse.swift */,
+				9FA50DEEE93FF3F1307FB12F /* NovelType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E165C8329549AA64A3F1A015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BD4D45804B7917BE765B522 /* Carthage */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E95F9DD0B41974CBE07465B7 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */,
+				189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */,
+				18C5C6E6783438215D2CB6C0 /* Request */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		F62B9F84658EBB0849EFF056 /* NarouAPI */ = {
+			isa = PBXGroup;
+			children = (
+				23F8D08C41DAC304FF293405 /* Info.plist */,
+				88FD93F59E345D771305534A /* NarouAPI.h */,
+				61FF55A437E2FDD912137579 /* Sources */,
+			);
+			path = NarouAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A165BC5923BB707300196942 /* Headers */ = {
+		1A3912D17746185136A35D76 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A165BC6F23BB707300196942 /* NarouAPI.h in Headers */,
+				81DC662519F698E6B7DF0196 /* NarouAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A165BC5D23BB707300196942 /* NarouAPI */ = {
+		4EFD43ABE3E2EE010B3DFC91 /* NarouAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A165BC7223BB707300196942 /* Build configuration list for PBXNativeTarget "NarouAPI" */;
+			buildConfigurationList = A1791C6A299C91A95B189DC5 /* Build configuration list for PBXNativeTarget "NarouAPI" */;
 			buildPhases = (
-				A165BC5923BB707300196942 /* Headers */,
-				A165BC5A23BB707300196942 /* Sources */,
-				A165BC5B23BB707300196942 /* Frameworks */,
-				A165BC5C23BB707300196942 /* Resources */,
+				1A3912D17746185136A35D76 /* Headers */,
+				5994F544794ACAF4B84E1E5A /* Sources */,
+				4C6BEC92F92C61F9E7D08553 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -115,172 +237,141 @@
 			);
 			name = NarouAPI;
 			productName = NarouAPI;
-			productReference = A165BC5E23BB707300196942 /* NarouAPI.framework */;
+			productReference = B318707DED5F705316CDBACC /* NarouAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A165BC6623BB707300196942 /* NarouAPITests */ = {
+		D48591D997D4F912E4221100 /* NarouAPITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A165BC7523BB707300196942 /* Build configuration list for PBXNativeTarget "NarouAPITests" */;
+			buildConfigurationList = A712A430A7EAF81169AC4706 /* Build configuration list for PBXNativeTarget "NarouAPITests" */;
 			buildPhases = (
-				A165BC6323BB707300196942 /* Sources */,
-				A165BC6423BB707300196942 /* Frameworks */,
-				A165BC6523BB707300196942 /* Resources */,
+				E968F57E6B3EFEA40F1CCEB4 /* Sources */,
+				CF1BBE194ABB404B39A00216 /* Frameworks */,
+				67650666F6EB584A76BD50C8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A165BC6A23BB707300196942 /* PBXTargetDependency */,
+				EC8EE8C7E541309108A795D0 /* PBXTargetDependency */,
 			);
 			name = NarouAPITests;
 			productName = NarouAPITests;
-			productReference = A165BC6723BB707300196942 /* NarouAPITests.xctest */;
+			productReference = 5004C351700AB9CE5D20CB9F /* NarouAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A165BC5523BB707300196942 /* Project object */ = {
+		C1A3580AD72FB57F2BA4534C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = tosaka.net;
-				TargetAttributes = {
-					A165BC5D23BB707300196942 = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-					A165BC6623BB707300196942 = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-				};
+				LastUpgradeCheck = 1020;
 			};
-			buildConfigurationList = A165BC5823BB707300196942 /* Build configuration list for PBXProject "NarouAPI" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 834C2629F27A8327981450A6 /* Build configuration list for PBXProject "NarouAPI" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = A165BC5423BB707300196942;
-			productRefGroup = A165BC5F23BB707300196942 /* Products */;
+			mainGroup = 6279EFFB63CA108A6359062D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A165BC5D23BB707300196942 /* NarouAPI */,
-				A165BC6623BB707300196942 /* NarouAPITests */,
+				4EFD43ABE3E2EE010B3DFC91 /* NarouAPI */,
+				D48591D997D4F912E4221100 /* NarouAPITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A165BC5C23BB707300196942 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A165BC6523BB707300196942 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A165BC5A23BB707300196942 /* Sources */ = {
+		5994F544794ACAF4B84E1E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76D4512F30BA6860D86A956 /* APIOptions.swift in Sources */,
+				0E4F1E7ED92331477C64B98A /* BaseAPIProtocol.swift in Sources */,
+				5A3D4A6AB3B3A6813EA285A4 /* BigGenre.swift in Sources */,
+				06F8F139DDF72284B420FB59 /* EndType.swift in Sources */,
+				18589FC8B8596C45C4BCDE68 /* Genre.swift in Sources */,
+				A59CE752E2AF48656C0CA87B /* HowToPost.swift in Sources */,
+				A7C6991BDCFA0BD82109A803 /* NarouAPIClient.swift in Sources */,
+				4221AA260F63B0F16A5FA12D /* Novel.swift in Sources */,
+				F68EFF18C63CD92B9C754105 /* NovelRequest.swift in Sources */,
+				8F6C3F01EF3558F637CE77E6 /* NovelResponse.swift in Sources */,
+				0B857322497612CDAD6348AE /* NovelType.swift in Sources */,
+				601966E98C4844B8F90814E0 /* ParameterBuilder.swift in Sources */,
+				EEEDCDEA42307239A2C07C9E /* URLParameterBuildable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A165BC6323BB707300196942 /* Sources */ = {
+		E968F57E6B3EFEA40F1CCEB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A165BC6D23BB707300196942 /* NarouAPITests.swift in Sources */,
+				71D4CD1FA52F452261C37A2F /* NarouAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A165BC6A23BB707300196942 /* PBXTargetDependency */ = {
+		EC8EE8C7E541309108A795D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A165BC5D23BB707300196942 /* NarouAPI */;
-			targetProxy = A165BC6923BB707300196942 /* PBXContainerItemProxy */;
+			target = 4EFD43ABE3E2EE010B3DFC91 /* NarouAPI */;
+			targetProxy = C985DA36C2DF63710FF4DF51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A165BC7023BB707300196942 /* Debug */ = {
+		2C966C0B3FA1CB81F62C45F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				INFOPLIST_FILE = NarouAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI.NarouAPITests;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E7744E4067602FC641F9359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NarouAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI.NarouAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A165BC7123BB707300196942 /* Release */ = {
+		6B2B32927D0AA726517655A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +381,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -313,7 +403,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -325,133 +414,153 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		821EA48B27B82C8D8ED7A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9ABA95E2030DB00277444139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NarouAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI.NarouAPITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC09F48A0DB25E6E432FA43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NarouAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI.NarouAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A165BC7323BB707300196942 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 35T2DQ975S;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NarouAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A165BC7423BB707300196942 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 35T2DQ975S;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NarouAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A165BC7623BB707300196942 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35T2DQ975S;
-				INFOPLIST_FILE = NarouAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A165BC7723BB707300196942 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35T2DQ975S;
-				INFOPLIST_FILE = NarouAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tosaka.NarouAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A165BC5823BB707300196942 /* Build configuration list for PBXProject "NarouAPI" */ = {
+		834C2629F27A8327981450A6 /* Build configuration list for PBXProject "NarouAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A165BC7023BB707300196942 /* Debug */,
-				A165BC7123BB707300196942 /* Release */,
+				821EA48B27B82C8D8ED7A4DB /* Debug */,
+				6B2B32927D0AA726517655A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A165BC7223BB707300196942 /* Build configuration list for PBXNativeTarget "NarouAPI" */ = {
+		A1791C6A299C91A95B189DC5 /* Build configuration list for PBXNativeTarget "NarouAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A165BC7323BB707300196942 /* Debug */,
-				A165BC7423BB707300196942 /* Release */,
+				5E7744E4067602FC641F9359 /* Debug */,
+				DC09F48A0DB25E6E432FA43E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "";
 		};
-		A165BC7523BB707300196942 /* Build configuration list for PBXNativeTarget "NarouAPITests" */ = {
+		A712A430A7EAF81169AC4706 /* Build configuration list for PBXNativeTarget "NarouAPITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A165BC7623BB707300196942 /* Debug */,
-				A165BC7723BB707300196942 /* Release */,
+				9ABA95E2030DB00277444139 /* Debug */,
+				2C966C0B3FA1CB81F62C45F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "";
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A165BC5523BB707300196942 /* Project object */;
+	rootObject = C1A3580AD72FB57F2BA4534C /* Project object */;
 }

@@ -1,0 +1,20 @@
+name: NarouAPI
+options:
+  minimumXcodeGenVersion: 2.11.0
+  bundleIdPrefix: net.tosaka.NarouAPI
+  deploymentTarget:
+    iOS: "11.0"
+targets:
+  NarouAPI:
+    type: framework
+    platform: iOS
+    sources: NarouAPI
+    dependencies:
+      - carthage: Alamofire
+      - carthage: RxSwift
+  NarouAPITests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: NarouAPITests
+    dependencies:
+      - target: NarouAPI
