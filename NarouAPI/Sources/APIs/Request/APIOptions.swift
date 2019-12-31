@@ -7,46 +7,6 @@
 
 import Foundation
 
-/// 順序オプション
-public enum Order: String {
-    /// 新着更新順
-    case new = "new"
-    /// ブックマーク数の多い順
-    case favoriteNovelCount = "favnovelcnt"
-    /// レビュー数の多い順
-    case reviewCount = "reviewcnt"
-    /// 総合ポイントの高い順
-    case hyoka = "hyoka"
-    /// 総合ポイントの低い順
-    case hyokaAsc = "hyokaasc"
-    /// 日間ポイントの高い順
-    case dailyPoint = "dailypoint"
-    /// 週間ポイントの高い順
-    case weeklyPoint = "weeklypoint"
-    /// 月間ポイントの高い順
-    case monthlyPoint = "monthlypoint"
-    /// 四半期ポイントの高い順
-    case quarterPoint = "quarterpoint"
-    /// 年間ポイントの高い順
-    case yearlyPoint = "yearlypoint"
-    /// 感想の多い順
-    case impressionCount = "impressioncnt"
-    /// 評価者数の多い順
-    case hyokaCount = "hyokacnt"
-    /// 評価者数の少ない順
-    case hyokaCountAsc = "hyokacntasc"
-    /// 週間ユニークユーザの多い順(毎週火曜日早朝リセット・前週の日曜日から土曜日分)
-    case weekly = "weekly"
-    /// 小説本文の文字数が多い順
-    case lengthDesc = "lengthdesc"
-    /// 小説本文の文字数が少ない順
-    case lengthAsc = "lengthasc"
-    /// 新着投稿順
-    case ncodeDesc = "ncodedesc"
-    /// 更新が古い順
-    case old = "old"
-}
-
 /// リクエストオプション
 public enum RequestOption {
     case gzip(Int)
@@ -176,6 +136,46 @@ public enum FilterOption {
             return PickUpParameterBuilder(pickUp: pickUp)
         }
     }
+}
+
+/// 順序オプション
+public enum Order: String {
+    /// 新着更新順
+    case new = "new"
+    /// ブックマーク数の多い順
+    case favoriteNovelCount = "favnovelcnt"
+    /// レビュー数の多い順
+    case reviewCount = "reviewcnt"
+    /// 総合ポイントの高い順
+    case hyoka = "hyoka"
+    /// 総合ポイントの低い順
+    case hyokaAsc = "hyokaasc"
+    /// 日間ポイントの高い順
+    case dailyPoint = "dailypoint"
+    /// 週間ポイントの高い順
+    case weeklyPoint = "weeklypoint"
+    /// 月間ポイントの高い順
+    case monthlyPoint = "monthlypoint"
+    /// 四半期ポイントの高い順
+    case quarterPoint = "quarterpoint"
+    /// 年間ポイントの高い順
+    case yearlyPoint = "yearlypoint"
+    /// 感想の多い順
+    case impressionCount = "impressioncnt"
+    /// 評価者数の多い順
+    case hyokaCount = "hyokacnt"
+    /// 評価者数の少ない順
+    case hyokaCountAsc = "hyokacntasc"
+    /// 週間ユニークユーザの多い順(毎週火曜日早朝リセット・前週の日曜日から土曜日分)
+    case weekly = "weekly"
+    /// 小説本文の文字数が多い順
+    case lengthDesc = "lengthdesc"
+    /// 小説本文の文字数が少ない順
+    case lengthAsc = "lengthasc"
+    /// 新着投稿順
+    case ncodeDesc = "ncodedesc"
+    /// 更新が古い順
+    case old = "old"
 }
 
 /// 小説タイプ

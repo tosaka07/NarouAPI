@@ -30,7 +30,13 @@ public struct NovelRequest: BaseRequestProtocol {
             }
     }
 
+    public init(options: [RequestOption], filterOptions: [FilterOption]) {
+        self.parameterBuilders = (options.map { $0.builder } + filterOptions.map { $0.builder })
+    }
+
     public init(parameterBuilders: [URLParameterBuildable]) {
         self.parameterBuilders = parameterBuilders
     }
 }
+
+
