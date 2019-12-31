@@ -11,7 +11,6 @@ targets:
     sources: NarouAPI
     dependencies:
       - carthage: Alamofire
-      - carthage: RxSwift
   NarouAPITests:
     type: bundle.unit-test
     platform: iOS

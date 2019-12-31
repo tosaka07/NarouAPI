@@ -11,9 +11,7 @@
 		0B857322497612CDAD6348AE /* NovelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA50DEEE93FF3F1307FB12F /* NovelType.swift */; };
 		0E4F1E7ED92331477C64B98A /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */; };
 		18589FC8B8596C45C4BCDE68 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBE3F442B716A22B6DF4A3 /* Genre.swift */; };
-		269C6244BD32D59FC98C2AEA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14E776914247850C4965C2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4221AA260F63B0F16A5FA12D /* Novel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */; };
-		54192F6191CFB81706ADE4C0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14E776914247850C4965C2 /* RxSwift.framework */; };
 		5A3D4A6AB3B3A6813EA285A4 /* BigGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0322235A45B939715745 /* BigGenre.swift */; };
 		601966E98C4844B8F90814E0 /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9763210B3E804267C90B14 /* ParameterBuilder.swift */; };
 		71D4CD1FA52F452261C37A2F /* NarouAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6470E5802BFAB0C2B214040 /* NarouAPITests.swift */; };
@@ -49,7 +47,6 @@
 			files = (
 				B09174723B104A9BD8B583D8 /* NarouAPI.framework in Embed Frameworks */,
 				9A9C5C390A855D34942BEEEE /* Alamofire.framework in Embed Frameworks */,
-				269C6244BD32D59FC98C2AEA /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +54,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E14E776914247850C4965C2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPIClient.swift; sourceTree = "<group>"; };
 		23F8D08C41DAC304FF293405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
@@ -86,7 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5583DEE0E4931352335ED17 /* Alamofire.framework in Frameworks */,
-				54192F6191CFB81706ADE4C0 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */,
-				0E14E776914247850C4965C2 /* RxSwift.framework */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
