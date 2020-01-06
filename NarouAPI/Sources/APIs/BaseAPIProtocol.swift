@@ -21,7 +21,7 @@ public protocol BaseAPIProtocol {
 public extension BaseAPIProtocol {
     var baseURL: URL {
         // 絶対にあることがある保証されているので「try！」を使用している
-        return URL(string: "https://api.syosetu.com/novelapi/api")! // swiftlint:disable:this force_try
+        return URL(string: "https://api.syosetu.com/")! // swiftlint:disable:this force_try
     }
 
     var headers: HTTPHeaders? { // 先ほど上で定義したもの。なければ「return nil」でok

@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol URLParameterBuildable {
-    func build() -> [String: String]
+    func build() -> [String: Any]
 }

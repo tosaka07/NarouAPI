@@ -1,26 +1,25 @@
 //
-//  NovelResponse.swift
+//  UserResponse.swift
 //  NarouAPI
 //
-//  Created by tosaka on 2019/08/23.
-//  Copyright © 2019 tosaka.net. All rights reserved.
+//  Created by 坂上 翔悟 on 2020/01/06.
 //
 
 import Foundation
 
-public struct NovelResponse: Decodable {
+public struct UserResponse: Decodable {
     public var allCount: Int
-    public var novels: [Novel]
+    public var users: [User]
 
     public init(from decoder: Decoder) throws {
         var unkeyedContainer = try decoder.unkeyedContainer()
         allCount = try unkeyedContainer.decode(Count.self).allcount
 
-        var result: [Novel] = []
+        var result: [User] = []
         result.reserveCapacity(allCount)
         while !unkeyedContainer.isAtEnd {
-            result.append(try unkeyedContainer.decode(Novel.self))
+            result.append(try unkeyedContainer.decode(User.self))
         }
-        novels = result
+        users = result
     }
 }

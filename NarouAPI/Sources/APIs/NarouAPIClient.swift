@@ -43,9 +43,21 @@ public struct NarouAPIClient {
         }
     }
 
-    public static func request(options: [RequestOption], filterOptions: [FilterOption], completion: @escaping (Result<NovelResponse, Failure>) -> Void) {
+    public static func fetchNovels(options: [RequestOption], filterOptions: [NovelFilterOption], completion: @escaping (Result<NovelResponse, Failure>) -> Void) {
         let request = NovelRequest(options: options, filterOptions: filterOptions)
         self.request(request).responseDecodable(of: NovelResponse.self, queue: queue, decoder: decoder) { response in
+            switch response.result {
+            case .success(let value):
+                completion(.success(value))
+            case .failure(let error):
+                completion(.failure(Failure.error(error.localizedDescription)))
+            }
+        }
+    }
+
+    public static func fetchUsers(options: [RequestOption], filterOptions: [UserFilterOption], completion: @escaping (Result<UserResponse, Failure>) -> Void) {
+        let request = UserRequest(options: options, filterOptions: filterOptions)
+        self.request(request).responseDecodable(of: UserResponse.self, queue: queue, decoder: decoder) { response in
             switch response.result {
             case .success(let value):
                 completion(.success(value))

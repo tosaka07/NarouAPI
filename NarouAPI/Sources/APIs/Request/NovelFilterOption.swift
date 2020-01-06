@@ -7,29 +7,8 @@
 
 import Foundation
 
-/// リクエストオプション
-public enum RequestOption {
-    case gzip(Int)
-    case limit(Int)
-    case startPosition(Int)
-    case order(Order)
-
-    var builder: URLParameterBuildable {
-        switch self {
-        case .gzip(let compressionLevel):
-            return GZipParameterBuilder(compressionLevel: compressionLevel)
-        case .limit(let limit):
-            return LimitParameterBuilder(limit: limit)
-        case .startPosition(let position):
-            return StartPositionParameterBuilder(startPosition: position)
-        case .order(let order):
-            return OrderParameterBuilder(order: order)
-        }
-    }
-}
-
 /// フィルターオプション
-public enum FilterOption {
+public enum NovelFilterOption {
     /// タイトル
     case title(SearchWords)
     /// あらすじ
@@ -47,7 +26,7 @@ public enum FilterOption {
     /// 除外ジャンル
     case excludeGenre([Genre])
     /// ユーザID
-    case userID([String])
+    case userID([Int])
     /// R15
     case r15(Bool)
     /// BL
@@ -63,9 +42,9 @@ public enum FilterOption {
     /// 文字数指定or読了時間（併用不可のため）
     case lengthOrTime(LengthOrTime)
     /// 会話率
-    case kaiwaritu(RangeOption<Int>)
+    case kaiwaritu(ExtendedRangeOption<Int>)
     /// 挿絵の数
-    case sasie(RangeOption<Int>)
+    case sasie(ExtendedRangeOption<Int>)
     /// Nコード
     case ncode([String])
     /// 小説タイプ
@@ -98,7 +77,7 @@ public enum FilterOption {
         case .excludeGenre(let excludeGenres):
             return GenreExcludeParameterBuilder(genreList: excludeGenres)
         case .userID(let userIDs):
-            return UserIDParameterBuilder(userIDs: userIDs)
+            return MultipleUserIDParameterBuilder(userIDs: userIDs)
         case .r15(let isR15):
             return R15ParameterBuilder(isR15: isR15)
         case .bl(let isBL):
@@ -240,46 +219,7 @@ public enum LastupType {
 /// 文字数指定or読了時間
 public enum LengthOrTime {
     /// 文字数指定
-    case length(RangeOption<Int>)
+    case length(ExtendedRangeOption<Int>)
     /// 読了時間指定
-    case time(RangeOption<Int>)
-}
-
-/// 範囲オプション
-public enum RangeOption<T: Comparable> {
-    /// ちょうど
-    case just(T)
-    /// N以下
-    case lowerThan(T)
-    /// N以上
-    case upperThan(T)
-    /// N以上N以下
-    case range(Range<T>)
-}
-
-/// 検索ワード
-public struct SearchWords {
-    /// 検索ワード
-    public let searchWords: [String]
-    /// 除外ワード
-    public let excludeWords: [String]
-
-    /// 一人だけ検索
-    /// - Parameter word: 検索ワード
-    public init(word: String) {
-        searchWords = [word]
-        excludeWords = []
-    }
-
-    /// 一人だけ除外検索
-    /// - Parameter word: 検索ワード
-    public init(excludeWord: String) {
-        searchWords = []
-        excludeWords = [excludeWord]
-    }
-
-    public init(searchWords: [String], excludeWords: [String]) {
-        self.searchWords = searchWords
-        self.excludeWords = excludeWords
-    }
+    case time(ExtendedRangeOption<Int>)
 }

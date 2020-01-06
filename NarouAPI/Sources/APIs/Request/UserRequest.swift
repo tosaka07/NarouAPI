@@ -1,15 +1,14 @@
 //
-//  NovelRequest.swift
-//  Tsukimi
+//  UserRequest.swift
+//  NarouAPI
 //
-//  Created by tosaka on 2019/08/23.
-//  Copyright © 2019 tosaka.net. All rights reserved.
+//  Created by 坂上 翔悟 on 2020/01/06.
 //
 
 import Alamofire
 
-public struct NovelRequest: BaseRequestProtocol {
-    public typealias ResponseType = NovelResponse
+public struct UserRequest: BaseRequestProtocol {
+    public typealias ResponseType = UserResponse
 
     let parameterBuilders: [URLParameterBuildable]
 
@@ -18,7 +17,7 @@ public struct NovelRequest: BaseRequestProtocol {
     }
 
     public var path: String {
-        return "novelapi/api"
+        return "userapi/api/"
     }
 
     public var parameters: Parameters? {
@@ -30,9 +29,7 @@ public struct NovelRequest: BaseRequestProtocol {
             }
     }
 
-    public init(options: [RequestOption], filterOptions: [NovelFilterOption]) {
+    public init(options: [RequestOption], filterOptions: [UserFilterOption]) {
         self.parameterBuilders = (options.map { $0.builder } + filterOptions.map { $0.builder })
     }
 }
-
-
