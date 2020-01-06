@@ -260,7 +260,26 @@ public enum RangeOption<T: Comparable> {
 /// 検索ワード
 public struct SearchWords {
     /// 検索ワード
-    let searchWords: [String]
+    public let searchWords: [String]
     /// 除外ワード
-    let excludeWords: [String]
+    public let excludeWords: [String]
+
+    /// 一人だけ検索
+    /// - Parameter word: 検索ワード
+    public init(word: String) {
+        searchWords = [word]
+        excludeWords = []
+    }
+
+    /// 一人だけ除外検索
+    /// - Parameter word: 検索ワード
+    public init(excludeWord: String) {
+        searchWords = []
+        excludeWords = [excludeWord]
+    }
+
+    public init(searchWords: [String], excludeWords: [String]) {
+        self.searchWords = searchWords
+        self.excludeWords = excludeWords
+    }
 }
