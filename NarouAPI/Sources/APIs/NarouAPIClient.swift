@@ -66,4 +66,16 @@ public struct NarouAPIClient {
             }
         }
     }
+    
+    public static func fetchRankings(options: [RankingRequestOption], completion: @escaping (Result<RankingResponse, Failure>) -> Void) {
+        let request = RankingRequest(options: options)
+        self.request(request).responseDecodable(of: RankingResponse.self, queue: queue, decoder: decoder) { response in
+            switch response.result {
+            case .success(let value):
+                completion(.success(value))
+            case .failure(let error):
+                completion(.failure(Failure.error(error.localizedDescription)))
+            }
+        }
+    }
 }
