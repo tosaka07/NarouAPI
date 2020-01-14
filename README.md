@@ -9,6 +9,12 @@
 - [x] 小説ランキングAPI
 - [x] 殿堂入りAPI
 
+## TODO
+
+- [ ] Error Handling
+- [ ] Request Parameter Validation 
+- [ ] Support gzip
+
 ## Installation
 
 ### Carthage
