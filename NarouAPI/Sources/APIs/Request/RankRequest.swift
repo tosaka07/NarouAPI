@@ -1,5 +1,5 @@
 //
-//  RankingRequest.swift
+//  RankRequest.swift
 //  NarouAPI
 //
 //  Created by 坂上 翔悟 on 2020/01/14.
@@ -7,8 +7,8 @@
 
 import Alamofire
 
-public struct RankingRequest: BaseRequestProtocol {
-    public typealias ResponseType = RankingResponse
+public struct RankRequest: BaseRequestProtocol {
+    public typealias ResponseType = RankResponse
 
     let parameterBuilders: [URLParameterBuildable]
 
@@ -17,19 +17,19 @@ public struct RankingRequest: BaseRequestProtocol {
     }
 
     public var path: String {
-        return "rank/rankget/"
+        return "rank/rankin/"
     }
 
     public var parameters: Parameters? {
-        let outputBuilder = OutputParameterBuilder()
-        return (parameterBuilders + [outputBuilder])
+        return parameterBuilders
             .map { $0.build() }
             .reduce([String: Any]()) { (value, new) -> [String: Any] in
                 value.merging(new, uniquingKeysWith: { $1 })
             }
     }
 
-    public init(options: [RankingRequestOption]) {
-        self.parameterBuilders = (options.map { $0.builder })
+    public init(ncode: String, options: [RankRequestOption]) {
+        let builder = [NCodeParameterBuilder(nCodes: [ncode]), OutputParameterBuilder()] + options.map { $0.builder }
+        self.parameterBuilders = builder
     }
 }

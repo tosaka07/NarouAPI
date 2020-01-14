@@ -409,11 +409,12 @@ struct UsernameParameterBuilder: URLParameterBuildable {
 
 struct RankingTypeParameterBuilder: URLParameterBuildable {
     let rankingType: RankingType
-    let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyyMMdd"
-        return formatter
-    }()
+    let dateFormatter: DateFormatter
+    
+    public init(rankingType: RankingType, dateFormatter: DateFormatter) {
+        self.rankingType = rankingType
+        self.dateFormatter = dateFormatter
+    }
     
     func build() -> [String : Any] {
         let key = "rtype"

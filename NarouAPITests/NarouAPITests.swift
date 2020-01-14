@@ -23,6 +23,11 @@ class NarouAPITests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testRankType() {
+        let test1 = "20200101-d"
+        XCTAssertNoThrow(try RankingType(rankString: test1))
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
