@@ -406,3 +406,27 @@ struct UsernameParameterBuilder: URLParameterBuildable {
         return parameters
     }
 }
+
+struct RankingTypeParameterBuilder: URLParameterBuildable {
+    let rankingType: RankingType
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd"
+        return formatter
+    }()
+    
+    func build() -> [String : Any] {
+        let key = "rtype"
+        let formattedDate = dateFormatter.string(from: rankingType.date)
+        switch rankingType.type {
+        case .daily:
+            return [key: "\(formattedDate)-d"]
+        case .weekly:
+            return [key: "\(formattedDate)-w"]
+        case .monthly:
+            return [key: "\(formattedDate)-m"]
+        case .quarterly:
+            return [key: "\(formattedDate)-q"]
+        }
+    }
+}
