@@ -15,7 +15,7 @@ public struct NarouAPIClient {
         case error(String)
     }
 
-    private static let successRange = 200 ..< 300
+    private static let successRange = 200 ... 200
     private static let contentType = ["application/json"]
     private static let retryCount: Int = 1
     private static let queue: DispatchQueue = .main
