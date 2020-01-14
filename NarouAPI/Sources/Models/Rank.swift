@@ -16,7 +16,7 @@ public struct Rank: Decodable {
     public var rank: Int
     
     private enum CodingKeys: String, CodingKey {
-        case rankingType
+        case rankingType = "rtype"
         case point = "pt"
         case rank
     }
