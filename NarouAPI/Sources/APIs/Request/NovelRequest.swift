@@ -6,9 +6,7 @@
 //  Copyright © 2019 tosaka.net. All rights reserved.
 //
 
-import Alamofire
-
-public struct NovelRequest: BaseRequestProtocol {
+public struct NovelRequest: RequestProtocol {
     public typealias ResponseType = NovelResponse
 
     let parameterBuilders: [URLParameterBuildable]

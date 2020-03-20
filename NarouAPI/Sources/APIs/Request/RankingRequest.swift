@@ -5,9 +5,7 @@
 //  Created by 坂上 翔悟 on 2020/01/14.
 //
 
-import Alamofire
-
-public struct RankingRequest: BaseRequestProtocol {
+public struct RankingRequest: RequestProtocol {
     public typealias ResponseType = RankingResponse
 
     let parameterBuilders: [URLParameterBuildable]

@@ -5,9 +5,7 @@
 //  Created by 坂上 翔悟 on 2020/01/06.
 //
 
-import Alamofire
-
-public struct UserRequest: BaseRequestProtocol {
+public struct UserRequest: RequestProtocol {
     public typealias ResponseType = UserResponse
 
     let parameterBuilders: [URLParameterBuildable]

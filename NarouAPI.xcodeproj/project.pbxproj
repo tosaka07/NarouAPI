@@ -11,7 +11,6 @@
 		06F8F139DDF72284B420FB59 /* EndType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89FECFDF25FF8002004F30 /* EndType.swift */; };
 		0B857322497612CDAD6348AE /* NovelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA50DEEE93FF3F1307FB12F /* NovelType.swift */; };
 		0C0A45701956B377B9E3AE44 /* RangeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C4CDC6231E9051BA181A85 /* RangeOption.swift */; };
-		0E4F1E7ED92331477C64B98A /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */; };
 		12144881A4379EC3030CE6C1 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC005BC33285600E99D92A18 /* Array+Extensions.swift */; };
 		18589FC8B8596C45C4BCDE68 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBE3F442B716A22B6DF4A3 /* Genre.swift */; };
 		19C5D5D1C1238929746A3251 /* RankResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7BECD1E1AEE91A775D94 /* RankResponse.swift */; };
@@ -19,6 +18,7 @@
 		3601E9AE7C2C76F402D84FD4 /* RequestOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857518319DD29D2C3553EC52 /* RequestOption.swift */; };
 		4221AA260F63B0F16A5FA12D /* Novel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */; };
 		52F4B21726AECC8F31C02A9F /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B4EEB7E06EBE26AA387D6 /* Count.swift */; };
+		56D78E2EA7EB9DBF874F31C0 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F365E40E4C005391ABD219 /* Client.swift */; };
 		5A3D4A6AB3B3A6813EA285A4 /* BigGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0322235A45B939715745 /* BigGenre.swift */; };
 		5F0AE47A5B3A6ECA75546F3A /* NovelFilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D9B0462CDC67BA56473AE /* NovelFilterOption.swift */; };
 		601966E98C4844B8F90814E0 /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9763210B3E804267C90B14 /* ParameterBuilder.swift */; };
@@ -27,7 +27,6 @@
 		87F735F601189E50FCA3C046 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8A6A92B37F35D6C73AB4D /* UserResponse.swift */; };
 		8F6C3F01EF3558F637CE77E6 /* NovelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E698ED90E16FE824D2D85 /* NovelResponse.swift */; };
 		99BCA265393AF2F372AC0E6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A1B235A5961F8D33C9A4D /* User.swift */; };
-		9A9C5C390A855D34942BEEEE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A59CE752E2AF48656C0CA87B /* HowToPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5088877BB87850EA279F367 /* HowToPost.swift */; };
 		A5E63A8EBD4F8D5FDC1A1103 /* NarouAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B318707DED5F705316CDBACC /* NarouAPI.framework */; };
 		A7C6991BDCFA0BD82109A803 /* NarouAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */; };
@@ -35,7 +34,6 @@
 		B09174723B104A9BD8B583D8 /* NarouAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B318707DED5F705316CDBACC /* NarouAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3B57ED6577B8327984C1074 /* UserFilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00F635F1097FAF2EA875C5 /* UserFilterOption.swift */; };
 		D1E43953E51B3B5162E7216B /* RankingRequestOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E75DA368A2C1322161BCDF /* RankingRequestOption.swift */; };
-		E5583DEE0E4931352335ED17 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */; };
 		E67E22A7F2250656F0BB2796 /* RankRequestOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E266449FDE43E06A233E7 /* RankRequestOption.swift */; };
 		EEEDCDEA42307239A2C07C9E /* URLParameterBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3079E9962F0F2D9B96D0D /* URLParameterBuildable.swift */; };
 		EF66708F5522E9B4EC677942 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4418584BFD81DAF7898F0 /* Rank.swift */; };
@@ -63,7 +61,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B09174723B104A9BD8B583D8 /* NarouAPI.framework in Embed Frameworks */,
-				9A9C5C390A855D34942BEEEE /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,14 +71,12 @@
 		189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPIClient.swift; sourceTree = "<group>"; };
 		1BFB7BECD1E1AEE91A775D94 /* RankResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankResponse.swift; sourceTree = "<group>"; };
 		23F8D08C41DAC304FF293405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		3F9763210B3E804267C90B14 /* ParameterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilder.swift; sourceTree = "<group>"; };
 		46C3079E9962F0F2D9B96D0D /* URLParameterBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterBuildable.swift; sourceTree = "<group>"; };
 		5004C351700AB9CE5D20CB9F /* NarouAPITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NarouAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E75DA368A2C1322161BCDF /* RankingRequestOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRequestOption.swift; sourceTree = "<group>"; };
 		613A49FF7366203BA0DDE597 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		6589077E131D9708D9FC977B /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
-		76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
 		7CE33FA47AEEB9C5EC95CB75 /* Novel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Novel.swift; sourceTree = "<group>"; };
 		857518319DD29D2C3553EC52 /* RequestOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOption.swift; sourceTree = "<group>"; };
 		866E266449FDE43E06A233E7 /* RankRequestOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankRequestOption.swift; sourceTree = "<group>"; };
@@ -105,20 +100,13 @@
 		E4C4CDC6231E9051BA181A85 /* RangeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeOption.swift; sourceTree = "<group>"; };
 		E4EE66FC76251C9C63B95288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E6470E5802BFAB0C2B214040 /* NarouAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarouAPITests.swift; sourceTree = "<group>"; };
+		E7F365E40E4C005391ABD219 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		E8EC0322235A45B939715745 /* BigGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigGenre.swift; sourceTree = "<group>"; };
 		EBC99ABCCD3EA621CA27304B /* SearchWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWords.swift; sourceTree = "<group>"; };
 		F56AB22C7732E817F85DC367 /* RankRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C6BEC92F92C61F9E7D08553 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5583DEE0E4931352335ED17 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CF1BBE194ABB404B39A00216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,23 +138,6 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		2BD4D45804B7917BE765B522 /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				5C97D9EEF89811025CD79391 /* iOS */,
-			);
-			name = Carthage;
-			path = Carthage/Build;
-			sourceTree = "<group>";
-		};
-		5C97D9EEF89811025CD79391 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2E5C5E15779A8E2C24DCF090 /* Alamofire.framework */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 		5EB12D35B78F4E14B8E812F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +162,6 @@
 			children = (
 				F62B9F84658EBB0849EFF056 /* NarouAPI */,
 				6683471ED49C6E46C259BFE3 /* NarouAPITests */,
-				E165C8329549AA64A3F1A015 /* Frameworks */,
 				5EB12D35B78F4E14B8E812F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -234,18 +204,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E165C8329549AA64A3F1A015 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2BD4D45804B7917BE765B522 /* Carthage */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E95F9DD0B41974CBE07465B7 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				76025CBE4FDC67B3FA45BC58 /* BaseAPIProtocol.swift */,
+				E7F365E40E4C005391ABD219 /* Client.swift */,
 				189CAD44CF106FAF0A0D9D22 /* NarouAPIClient.swift */,
 				18C5C6E6783438215D2CB6C0 /* Request */,
 			);
@@ -282,7 +244,6 @@
 			buildPhases = (
 				1A3912D17746185136A35D76 /* Headers */,
 				5994F544794ACAF4B84E1E5A /* Sources */,
-				4C6BEC92F92C61F9E7D08553 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,8 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12144881A4379EC3030CE6C1 /* Array+Extensions.swift in Sources */,
-				0E4F1E7ED92331477C64B98A /* BaseAPIProtocol.swift in Sources */,
 				5A3D4A6AB3B3A6813EA285A4 /* BigGenre.swift in Sources */,
+				56D78E2EA7EB9DBF874F31C0 /* Client.swift in Sources */,
 				52F4B21726AECC8F31C02A9F /* Count.swift in Sources */,
 				06F8F139DDF72284B420FB59 /* EndType.swift in Sources */,
 				18589FC8B8596C45C4BCDE68 /* Genre.swift in Sources */,
@@ -398,10 +359,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = NarouAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,10 +381,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = NarouAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,10 +511,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = NarouAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,10 +533,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = NarouAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
